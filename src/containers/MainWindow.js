@@ -23,12 +23,16 @@ export default class MainWindow extends Component {
         });
     };
 
+    onImageClickHandler = (image) => {
+        alert(JSON.stringify(image.dominantColors));
+    };
+
     render() {
         return (
             <View style={{ flex: 1 }}>
                 <AlbumHeader onClick={this.onHeaderButtonClickHandler} />
                 <ScrollView style={{ flex: 1 }}>
-                    <Album images={this.state.filteredImages} />
+                    <Album images={this.state.filteredImages} onClick={this.onImageClickHandler} />
                 </ScrollView>
             </View>
         );

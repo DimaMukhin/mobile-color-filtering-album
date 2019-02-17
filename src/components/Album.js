@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, TouchableOpacity } from 'react-native';
 
 import AlbumItem from './AlbumItem';
 
@@ -22,7 +22,11 @@ export default class Album extends Component {
     }
 
     render() {
-        const albumItems = this.state.images.map((image, i) => <AlbumItem url={image.url} key={ i } />);
+        const albumItems = this.state.images.map((image, i) => (
+            <TouchableOpacity key={ i } onPress={ () => this.props.onClick(image) }>
+                <AlbumItem url={image.url} />
+            </TouchableOpacity>
+        ));
 
         return (
             <View style={styles.container}>
