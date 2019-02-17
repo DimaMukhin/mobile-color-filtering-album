@@ -8,10 +8,13 @@ import AlbumHeader from '../components/AlbumHeader';
 export default class MainWindow extends Component {
     state = {
         filteredImages: images
-    }
+    };
 
-    // filter on blue color
-    onClickHandler = (color) => {
+    /**
+     * on Header (color) button click handler
+     * filter images based on the clicked color
+     */
+    onHeaderButtonClickHandler = (color) => {
         const newFilteredImages = typeof color === 'string' 
             ? images.filter((image) => image.dominantColors.includes(color))
             : images;
@@ -23,7 +26,7 @@ export default class MainWindow extends Component {
     render() {
         return (
             <View style={{ flex: 1 }}>
-                <AlbumHeader onClick={this.onClickHandler} />
+                <AlbumHeader onClick={this.onHeaderButtonClickHandler} />
                 <ScrollView style={{ flex: 1 }}>
                     <Album images={this.state.filteredImages} />
                 </ScrollView>

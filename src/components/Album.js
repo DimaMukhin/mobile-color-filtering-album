@@ -6,12 +6,15 @@ import AlbumItem from './AlbumItem';
 export default class Album extends Component {
     state = {
         images: this.props.images
-    }
+    };
 
     constructor(props) {
         super(props);
     }
 
+    /**
+     * Handles updating images shown after filtering in MainWindow.js
+     */
     componentWillReceiveProps(nextProps) {
         this.setState({
             images: nextProps.images
