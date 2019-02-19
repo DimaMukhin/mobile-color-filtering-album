@@ -11,7 +11,7 @@ export const colors = {
 }
 
 export default [
-    {
+    /* {
         url: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0&auto=format&fit=crop&w=1344&q=80",
         dominantColors: [
             colors.blue,
@@ -102,5 +102,81 @@ export default [
             colors.blue,
             colors.grey
         ]
+    }, */
+    {
+        url: "images/1.png",
+        dominantColors: [
+            colors.purple,
+            colors.pink,
+            colors.green
+        ]
     },
+    {
+        url: "images/2.png",
+        dominantColors: [
+            colors.blue,
+            colors.purple,
+            colors.green,
+            colors.pink
+        ]
+    },
+    {
+        url: "images/3.png",
+        dominantColors: [
+            colors.orange,
+            colors.purple
+        ]
+    },
+    {
+        url: "images/4.png",
+        dominantColors: [
+            colors.yellow,
+            colors.orange,
+            colors.purple,
+            colors.blue
+        ]
+    },
+    {
+        url: "images/5.png",
+        dominantColors: [
+            colors.red,
+            colors.green,
+            colors.pink
+        ]
+    },
+    {
+        url: "images/6.png",
+        dominantColors: [
+            colors.purple,
+            colors.pink
+        ]
+    },
+    {
+        url: "images/7.png",
+        dominantColors: [
+            colors.purple,
+            colors.pink
+        ]
+    },
+    {
+        url: "images/8.png",
+        dominantColors: [
+            colors.green
+        ]
+    },
+    {
+        url: "images/9.png",
+        dominantColors: [
+            colors.red,
+            colors.green
+        ]
+    },
+    {
+        url: "images/10.png",
+        dominantColors: [
+            colors.purple,
+            colors.pink,
+            colors.yellow
+        ]
+    }
 ];
