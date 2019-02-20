@@ -11,7 +11,7 @@ export const colors = {
 }
 
 export default [
-    /* {
+    {
         url: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0&auto=format&fit=crop&w=1344&q=80",
         dominantColors: [
             colors.blue,
@@ -102,8 +102,8 @@ export default [
             colors.blue,
             colors.grey
         ]
-    }, */
-    {
+    },
+    /*{
         url: "images/1.png",
         dominantColors: [
             colors.purple,
@@ -178,5 +178,5 @@ export default [
             colors.pink,
             colors.yellow
         ]
-    }
+    }*/
 ];

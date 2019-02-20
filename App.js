@@ -1,22 +1,18 @@
-import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import React, { Component } from 'react';
+import { createStackNavigator, createAppContainer } from "react-navigation";
 
 import MainWindow from './src/containers/MainWindow';
+import ImageGallery from './src/containers/ImageGallery';
 
-export default class App extends React.Component {
-  render() {
-    return (
-        <View style={{ flex: 1 }}>
-            <View style={styles.topBar}></View>
-            <MainWindow />
-        </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-    topBar: {
-        height: 23,
-        backgroundColor: 'grey'
-    }
+const AppNavigator = createStackNavigator({
+    MainWindow: MainWindow,
+    ImageGallery: ImageGallery
 });
+
+const AppContainer = createAppContainer(AppNavigator);
+
+export default class App extends Component {
+    render() {
+        return <AppContainer />;
+    }
+}

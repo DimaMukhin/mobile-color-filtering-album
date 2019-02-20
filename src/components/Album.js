@@ -23,14 +23,17 @@ export default class Album extends Component {
 
     render() {
         const albumItems = this.state.images.map((image, i) => (
-            <TouchableOpacity key={ i } onPress={ () => this.props.onClick(image) }>
+            <TouchableOpacity key={i} onPress={() => {
+                const endTime = new Date();
+                this.props.onClick(image, endTime.getTime());
+            }}>
                 <AlbumItem url={image.url} />
             </TouchableOpacity>
         ));
 
         return (
             <View style={styles.container}>
-                { albumItems }
+                {albumItems}
             </View>
         );
     }
