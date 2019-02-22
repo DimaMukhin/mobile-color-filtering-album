@@ -106,7 +106,7 @@ export default [
     },
     */
     {
-        url: "images/1.png",
+        url: "https://raw.githubusercontent.com/DimaMukhin/hci-album-demo/master/assets/images/1.png?token=AVwxyftsRQoIAlX8DFj14azLsBfcb67_ks5cebv-wA%3D%3D",
         dominantColors: [
             colors.purple,
             colors.pink,
