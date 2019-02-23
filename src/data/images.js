@@ -106,7 +106,7 @@ export default [
     },
     */
     {
-        url: "https://raw.githubusercontent.com/DimaMukhin/hci-album-demo/master/assets/images/1.png?token=AVwxyftsRQoIAlX8DFj14azLsBfcb67_ks5cebv-wA%3D%3D",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/1.jpg",
         dominantColors: [
             colors.purple,
             colors.pink,
@@ -114,7 +114,7 @@ export default [
         ]
     },
     {
-        url: "images/2.png",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/2.jpg",
         dominantColors: [
             colors.blue,
             colors.purple,
@@ -123,14 +123,14 @@ export default [
         ]
     },
     {
-        url: "images/3.png",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/3.jpg",
         dominantColors: [
             colors.orange,
             colors.purple
         ]
     },
     {
-        url: "images/4.png",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/4.jpg",
         dominantColors: [
             colors.yellow,
             colors.orange,
@@ -139,7 +139,7 @@ export default [
         ]
     },
     {
-        url: "images/5.png",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/5.jpg",
         dominantColors: [
             colors.red,
             colors.green,
@@ -147,34 +147,34 @@ export default [
         ]
     },
     {
-        url: "images/6.png",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/6.jpg",
         dominantColors: [
             colors.purple,
             colors.pink
         ]
     },
     {
-        url: "images/7.png",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/7.jpg",
         dominantColors: [
             colors.purple,
             colors.pink
         ]
     },
     {
-        url: "images/8.png",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/8.jpg",
         dominantColors: [
             colors.green
         ]
     },
     {
-        url: "images/9.png",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/9.jpg",
         dominantColors: [
             colors.red,
             colors.green
         ]
     },
     {
-        url: "images/10.png",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/10.jpg",
         dominantColors: [
             colors.purple,
             colors.green,
@@ -182,14 +182,14 @@ export default [
         ]
     },
         {
-        url: "images/11.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/11.jpg",
         dominantColors: [
             colors.blue,
             colors.green
         ]
     },
     {
-        url: "images/12.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/12.jpg",
         dominantColors: [
             colors.green,
             colors.red,
@@ -197,7 +197,7 @@ export default [
         ]
     },
     {
-        url: "images/13.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/13.jpg",
         dominantColors: [
             colors.orange,
             colors.yellow,
@@ -205,21 +205,21 @@ export default [
         ]
     },
     {
-        url: "images/14.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/14.jpg",
         dominantColors: [
             colors.blue,
             colors.purple
         ]
     },
     {
-        url: "images/15.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/15.jpg",
         dominantColors: [
             colors.red,
             colors.green
         ]
     },
     {
-        url: "images/16.jpeg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/16.jpeg",
         dominantColors: [
             colors.purple,
             colors.green,
@@ -227,7 +227,7 @@ export default [
         ]
     },
     {
-        url: "images/17.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/17.jpg",
         dominantColors: [
             colors.yellow,
             colors.red,
@@ -235,7 +235,7 @@ export default [
         ]
     },
     {
-        url: "images/18.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/18.jpg",
         dominantColors: [
             colors.green,
             colors.blue,
@@ -243,70 +243,70 @@ export default [
         ]
     },
     {
-        url: "images/19.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/19.jpg",
         dominantColors: [
             colors.red,
             colors.purple
         ]
     },
     {
-        url: "images/20.jpeg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/20.jpeg",
         dominantColors: [
             colors.red,
             colors.blue
         ]
     },
         {
-        url: "images/21.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/21.jpg",
         dominantColors: [
             colors.green,
             colors.blue
         ]
     },
     {
-        url: "images/22.jpeg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/22.jpeg",
         dominantColors: [
             colors.orange,
             colors.yellow
         ]
     },
     {
-        url: "images/23.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/23.jpg",
         dominantColors: [
             colors.yellow,
             colors.green
         ]
     },
     {
-        url: "images/24.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/24.jpg",
         dominantColors: [
             colors.red,
             colors.green
         ]
     },
     {
-        url: "images/25.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/25.jpg",
         dominantColors: [
             colors.yellow,
             colors.orange
         ]
     },
     {
-        url: "images/26.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/26.jpg",
         dominantColors: [
             colors.green,
             colors.blue
         ]
     },
     {
-        url: "images/27.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/27.jpg",
         dominantColors: [
             colors.green,
             colors.pink
         ]
     },
     {
-        url: "images/28.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/28.jpg",
         dominantColors: [
             colors.pink,
             colors.purple,
@@ -314,7 +314,7 @@ export default [
         ]
     },
     {
-        url: "images/29.gif",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/29.jpg",
         dominantColors: [
             colors.yellow,
             colors.green,
@@ -322,14 +322,14 @@ export default [
         ]
     },
     {
-        url: "images/30.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/30.jpg",
         dominantColors: [
             colors.purple,
             colors.blue
         ]
     },
         {
-        url: "images/31.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/31.jpg",
         dominantColors: [
             colors.purple,
             colors.pink,
@@ -337,7 +337,7 @@ export default [
         ]
     },
     {
-        url: "images/32.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/32.jpg",
         dominantColors: [
             colors.red,
             colors.yellow,
@@ -347,7 +347,7 @@ export default [
         ]
     },
     {
-        url: "images/33.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/33.jpg",
         dominantColors: [
             colors.pink,
             colors.blue,
@@ -355,14 +355,14 @@ export default [
         ]
     },
     {
-        url: "images/34.png",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/34.jpg",
         dominantColors: [
             colors.yellow,
             colors.green
         ]
     },
     {
-        url: "images/35.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/35.jpg",
         dominantColors: [
             colors.purple,
             colors.yellow,
@@ -371,28 +371,28 @@ export default [
         ]
     },
     {
-        url: "images/36.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/36.jpg",
         dominantColors: [
             colors.blue,
             colors.yellow
         ]
     },
     {
-        url: "images/37.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/37.jpg",
         dominantColors: [
             colors.orange,
             colors.green
         ]
     },
     {
-        url: "images/38.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/38.jpg",
         dominantColors: [
             colors.green,
             colors.blue
         ]
     },
     {
-        url: "images/39.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/39.jpg",
         dominantColors: [
             colors.blue,
             colors.pink,
@@ -400,7 +400,7 @@ export default [
         ]
     },
     {
-        url: "images/40.png",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/40.jpg",
         dominantColors: [
             colors.blue,
             colors.green,
@@ -409,14 +409,14 @@ export default [
         ]
     },
         {
-        url: "images/41.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/41.jpg",
         dominantColors: [
             colors.yellow,
             colors.green
         ]
     },
     {
-        url: "images/42.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/42.jpg",
         dominantColors: [
             colors.blue,
             colors.purple,
@@ -424,7 +424,7 @@ export default [
         ]
     },
     {
-        url: "images/43.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/43.jpg",
         dominantColors: [
             colors.yellow,
             colors.red,
@@ -433,14 +433,14 @@ export default [
         ]
     },
     {
-        url: "images/44.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/44.jpg",
         dominantColors: [
             colors.yellow,
             colors.red
         ]
     },
     {
-        url: "images/45.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/45.jpg",
         dominantColors: [
             colors.red,
             colors.green,
@@ -450,7 +450,7 @@ export default [
         ]
     },
     {
-        url: "images/46.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/46.jpg",
         dominantColors: [
             colors.purple,
             colors.green,
@@ -458,14 +458,14 @@ export default [
         ]
     },
     {
-        url: "images/47.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/47.jpg",
         dominantColors: [
             colors.green,
             colors.red
         ]
     },
     {
-        url: "images/48.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/48.jpg",
         dominantColors: [
             colors.green,
             colors.orange,
@@ -474,14 +474,14 @@ export default [
         ]
     },
     {
-        url: "images/49.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/49.jpg",
         dominantColors: [
             colors.purple,
             colors.yellow
         ]
     },
     {
-        url: "images/50.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/50.jpg",
         dominantColors: [
             colors.yellow,
             colors.orange,
@@ -489,7 +489,7 @@ export default [
         ]
     },
         {
-        url: "images/51.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/51.jpg",
         dominantColors: [
             colors.pink,
             colors.orange,
@@ -497,28 +497,28 @@ export default [
         ]
     },
     {
-        url: "images/52.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/52.jpg",
         dominantColors: [
             colors.blue,
             colors.red
         ]
     },
     {
-        url: "images/53.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/53.jpg",
         dominantColors: [
             colors.red,
             colors.green
         ]
     },
     {
-        url: "images/54.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/54.jpg",
         dominantColors: [
             colors.orange,
             colors.red
         ]
     },
     {
-        url: "images/55.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/55.jpg",
         dominantColors: [
             colors.red,
             colors.yellow,
@@ -526,42 +526,42 @@ export default [
         ]
     },
     {
-        url: "images/56.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/56.jpg",
         dominantColors: [
             colors.purple,
             colors.orange
         ]
     },
     {
-        url: "images/57.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/57.jpg",
         dominantColors: [
             colors.blue,
             colors.orange
         ]
     },
     {
-        url: "images/58.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/58.jpg",
         dominantColors: [
             colors.green,
             colors.yellow
         ]
     },
     {
-        url: "images/59.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/59.jpg",
         dominantColors: [
             colors.red,
             colors.yellow
         ]
     },
     {
-        url: "images/60.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/60.jpg",
         dominantColors: [
             colors.green,
             colors.yellow
         ]
     },
         {
-        url: "images/61.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/61.jpg",
         dominantColors: [
             colors.yellow,
             colors.orange,
@@ -569,7 +569,7 @@ export default [
         ]
     },
     {
-        url: "images/62.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/62.jpg",
         dominantColors: [
             colors.yellow,
             colors.blue,
@@ -577,28 +577,28 @@ export default [
         ]
     },
     {
-        url: "images/63.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/63.jpg",
         dominantColors: [
             colors.green,
             colors.yellow
         ]
     },
     {
-        url: "images/64.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/64.jpg",
         dominantColors: [
             colors.yellow,
             colors.green
         ]
     },
     {
-        url: "images/65.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/65.jpg",
         dominantColors: [
             colors.yellow,
             colors.pink
         ]
     },
     {
-        url: "images/66.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/66.jpg",
         dominantColors: [
             colors.yellow,
             colors.pink,
@@ -606,14 +606,14 @@ export default [
         ]
     },
     {
-        url: "images/67.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/67.jpg",
         dominantColors: [
             colors.green,
             colors.pink
         ]
     },
     {
-        url: "images/68.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/68.jpg",
         dominantColors: [
             colors.red,
             colors.blue,
@@ -621,14 +621,14 @@ export default [
         ]
     },
     {
-        url: "images/69.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/69.jpg",
         dominantColors: [
             colors.pink,
             colors.yellow
         ]
     },
     {
-        url: "images/70.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/70.jpg",
         dominantColors: [
             colors.pink,
             colors.yellow,
@@ -637,42 +637,42 @@ export default [
         ]
     },
         {
-        url: "images/71.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/71.jpg",
         dominantColors: [
             colors.blue,
             colors.green
         ]
     },
     {
-        url: "images/72.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/72.jpg",
         dominantColors: [
             colors.blue,
             colors.green
         ]
     },
     {
-        url: "images/73.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/73.jpg",
         dominantColors: [
             colors.yellow,
             colors.green
         ]
     },
     {
-        url: "images/74.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/74.jpg",
         dominantColors: [
             colors.yellow,
             colors.green
         ]
     },
     {
-        url: "images/75.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/75.jpg",
         dominantColors: [
             colors.red,
             colors.green
         ]
     },
     {
-        url: "images/76.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/76.jpg",
         dominantColors: [
             colors.blue,
             colors.green,
@@ -680,7 +680,7 @@ export default [
         ]
     },
     {
-        url: "images/77.jpeg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/77.jpeg",
         dominantColors: [
             colors.blue,
             colors.red,
@@ -688,7 +688,7 @@ export default [
         ]
     },
     {
-        url: "images/78.jpeg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/78.jpeg",
         dominantColors: [
             colors.blue,
             colors.yellow,
@@ -696,7 +696,7 @@ export default [
         ]
     },
     {
-        url: "images/79.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/79.jpg",
         dominantColors: [
             colors.yellow,
             colors.purple,
@@ -704,7 +704,7 @@ export default [
         ]
     },
     {
-        url: "images/80.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/80.jpg",
         dominantColors: [
             colors.purple,
             colors.blue,
@@ -712,7 +712,7 @@ export default [
         ]
     },
         {
-        url: "images/81.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/81.jpg",
         dominantColors: [
             colors.yellow,
             colors.orange,
@@ -720,7 +720,7 @@ export default [
         ]
     },
     {
-        url: "images/82.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/82.jpg",
         dominantColors: [
             colors.yellow,
             colors.blue,
@@ -728,7 +728,7 @@ export default [
         ]
     },
     {
-        url: "images/83.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/83.jpg",
         dominantColors: [
             colors.red,
             colors.blue,
@@ -736,21 +736,21 @@ export default [
         ]
     },
     {
-        url: "images/84.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/84.jpg",
         dominantColors: [
             colors.green,
             colors.red
         ]
     },
     {
-        url: "images/85.jpeg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/85.jpeg",
         dominantColors: [
             colors.blue,
             colors.green
         ]
     },
     {
-        url: "images/86.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/86.jpg",
         dominantColors: [
             colors.blue,
             colors.orange,
@@ -758,7 +758,7 @@ export default [
         ]
     },
     {
-        url: "images/87.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/87.jpg",
         dominantColors: [
             colors.orange,
             colors.yellow,
@@ -766,14 +766,14 @@ export default [
         ]
     },
     {
-        url: "images/88.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/88.jpg",
         dominantColors: [
             colors.red,
             colors.blue
         ]
     },
     {
-        url: "images/89.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/89.jpg",
         dominantColors: [
             colors.red,
             colors.green,
@@ -785,21 +785,21 @@ export default [
         ]
     },
     {
-        url: "images/90.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/90.jpg",
         dominantColors: [
             colors.red,
             colors.pink
         ]
     },
         {
-        url: "images/91.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/91.jpg",
         dominantColors: [
             colors.pink,
             colors.green
         ]
     },
     {
-        url: "images/92.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/92.jpg",
         dominantColors: [
             colors.yellow,
             colors.red,
@@ -807,7 +807,7 @@ export default [
         ]
     },
     {
-        url: "images/93.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/93.jpg",
         dominantColors: [
             colors.blue,
             colors.yellow,
@@ -815,21 +815,21 @@ export default [
         ]
     },
     {
-        url: "images/94.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/94.jpg",
         dominantColors: [
             colors.yellow,
             colors.blue
         ]
     },
     {
-        url: "images/95.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/95.jpg",
         dominantColors: [
             colors.green,
             colors.pink
         ]
     },
     {
-        url: "images/96.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/96.jpg",
         dominantColors: [
             colors.blue,
             colors.yellow,
@@ -837,14 +837,14 @@ export default [
         ]
     },
     {
-        url: "images/97.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/97.jpg",
         dominantColors: [
             colors.red,
             colors.green
         ]
     },
     {
-        url: "images/98.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/98.jpg",
         dominantColors: [
             colors.green,
             colors.yellow,
@@ -854,14 +854,14 @@ export default [
         ]
     },
     {
-        url: "images/99.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/99.jpg",
         dominantColors: [
             colors.yellow,
             colors.green
         ]
     },
     {
-        url: "images/100.jpg",
+        url: "https://bitbucket.org/shaiTheGuy/hci-album-images/raw/dcdeba43559526812fe026a95631a6fa0d6f47cd/images/100.jpg",
         dominantColors: [
             colors.purple,
             colors.yellow
