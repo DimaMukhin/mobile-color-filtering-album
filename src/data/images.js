@@ -106,7 +106,7 @@ export default [
     },
     */
     {
-        url: "images/1.png",
+        url: "images/1.jpg",
         dominantColors: [
             colors.purple,
             colors.pink,
@@ -114,7 +114,7 @@ export default [
         ]
     },
     {
-        url: "images/2.png",
+        url: "images/2.jpg",
         dominantColors: [
             colors.blue,
             colors.purple,
@@ -123,14 +123,14 @@ export default [
         ]
     },
     {
-        url: "images/3.png",
+        url: "images/3.jpg",
         dominantColors: [
             colors.orange,
             colors.purple
         ]
     },
     {
-        url: "images/4.png",
+        url: "images/4.jpg",
         dominantColors: [
             colors.yellow,
             colors.orange,
@@ -139,7 +139,7 @@ export default [
         ]
     },
     {
-        url: "images/5.png",
+        url: "images/5.jpg",
         dominantColors: [
             colors.red,
             colors.green,
@@ -147,34 +147,34 @@ export default [
         ]
     },
     {
-        url: "images/6.png",
+        url: "images/6.jpg",
         dominantColors: [
             colors.purple,
             colors.pink
         ]
     },
     {
-        url: "images/7.png",
+        url: "images/7.jpg",
         dominantColors: [
             colors.purple,
             colors.pink
         ]
     },
     {
-        url: "images/8.png",
+        url: "images/8.jpg",
         dominantColors: [
             colors.green
         ]
     },
     {
-        url: "images/9.png",
+        url: "images/9.jpg",
         dominantColors: [
             colors.red,
             colors.green
         ]
     },
     {
-        url: "images/10.png",
+        url: "images/10.jpg",
         dominantColors: [
             colors.purple,
             colors.green,
@@ -314,7 +314,7 @@ export default [
         ]
     },
     {
-        url: "images/29.gif",
+        url: "images/29.jpg",
         dominantColors: [
             colors.yellow,
             colors.green,
@@ -355,7 +355,7 @@ export default [
         ]
     },
     {
-        url: "images/34.png",
+        url: "images/34.jpg",
         dominantColors: [
             colors.yellow,
             colors.green
@@ -400,7 +400,7 @@ export default [
         ]
     },
     {
-        url: "images/40.png",
+        url: "images/40.jpg",
         dominantColors: [
             colors.blue,
             colors.green,
