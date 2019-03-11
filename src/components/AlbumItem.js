@@ -1,21 +1,23 @@
 import React from 'react';
-import { View, Image, StyleSheet } from 'react-native';
+import { Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 export default (props) => (
-    <View style={styles.container} >
+    <TouchableOpacity onPress={props.onPress} style={styles.container}>
         <Image source={{ uri: props.url }} style={styles.imageInBox} />
-    </View>
+    </TouchableOpacity>
 );
 
 const styles = StyleSheet.create({
     container: {
-        width: 150,
-        height: 150,
+        width: '50%',
         backgroundColor: 'red',
-        marginTop: 10
+        borderWidth: 1,
+        borderRightWidth: 0,
+        borderBottomWidth: 0,
+        borderColor: '#666666',
     },
     imageInBox: {
-        width: 150,
-        height: 150
+        width: '100%',
+        height: 200
     }
 });
