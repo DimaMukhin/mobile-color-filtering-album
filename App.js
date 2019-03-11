@@ -5,8 +5,18 @@ import MainWindow from './src/containers/MainWindow';
 import ImageGallery from './src/containers/ImageGallery';
 
 const AppNavigator = createStackNavigator({
-    MainWindow: MainWindow,
-    ImageGallery: ImageGallery
+    MainWindow: {
+        screen: MainWindow,
+        navigationOptions: {
+            header: null
+        }
+    },
+    ImageGallery: {
+        screen: ImageGallery,
+        navigationOptions: {
+            header: null
+        }
+    }
 });
 
 const AppContainer = createAppContainer(AppNavigator);

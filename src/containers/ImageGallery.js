@@ -35,6 +35,7 @@ export default class ImageGallery extends Component {
     render() {
         return (
             <View style={{ flex: 1 }}>
+                <View style={{ backgroundColor: 'white', height: 24 }} />
                 <AlbumHeader onClick={this.onHeaderButtonClickHandler} />
                 <ScrollView style={{ flex: 1 }}>
                     <Album images={this.state.filteredImages} onClick={this.onImageClickHandler} />
