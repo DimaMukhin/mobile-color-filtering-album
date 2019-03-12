@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import { ScrollView, View } from 'react-native';
+import { ScrollView, View, Animated } from 'react-native';
+import { withCollapsible } from 'react-navigation-collapsible';
 
 import images from '../data/images';
 import Album from '../components/Album';
 import AlbumHeader from '../components/AlbumHeader';
 
-export default class ImageGallery extends Component {
+const AnimatedScrollView = Animated.createAnimatedComponent(ScrollView);
+
+class ImageGallery extends Component {
     state = {
         filteredImages: images
     };
@@ -33,14 +36,30 @@ export default class ImageGallery extends Component {
     };
 
     render() {
+        const { paddingHeight, animatedY, onScroll } = this.props.collapsible;
+
         return (
             <View style={{ flex: 1 }}>
-                <View style={{ backgroundColor: 'white', height: 24 }} />
-                <AlbumHeader onClick={this.onHeaderButtonClickHandler} />
-                <ScrollView style={{ flex: 1 }}>
+                <AnimatedScrollView
+                    style={{ flex: 1 }}
+                    contentContainerStyle={{ paddingTop: paddingHeight }}
+                    scrollIndicatorInsets={{ top: paddingHeight }}
+                    onScroll={onScroll}
+                    _mustAddThis={animatedY}>
                     <Album images={this.state.filteredImages} onClick={this.onImageClickHandler} />
-                </ScrollView>
+                </AnimatedScrollView>
             </View>
         );
     }
 }
+
+const collapsibleParams = {
+    collapsibleComponent: AlbumHeader,
+    collapsibleBackgroundStyle: {
+        height: 60,
+        backgroundColor: 'white',
+        // disableFadeoutInnerComponent: true,
+    }
+}
+
+export default withCollapsible(ImageGallery, collapsibleParams);

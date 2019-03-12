@@ -5,6 +5,7 @@ import { colors } from '../data/images';
 
 export default (props) => (
     <View style={styles.container}>
+        <View style={{ backgroundColor: 'white', height: 24 }} />
         <View style={{ ...styles.filtersRow, marginTop: 10 }}>
             <Button color="red" title="" onPress={() => props.onClick(colors.red)} />
             <Button color="orange" title="" onPress={() => props.onClick(colors.orange)} />
@@ -24,7 +25,7 @@ export default (props) => (
 
 const styles = StyleSheet.create({
     container: {
-        height: 80,
+        height: 104,
         backgroundColor: '#EEEEEE'
     },
     filtersRow: {
