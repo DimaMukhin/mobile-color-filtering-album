@@ -13,6 +13,15 @@ class ImageGallery extends Component {
         filteredImages: images
     };
 
+    collapsibleParams = {
+        collapsibleComponent: () => (<AlbumHeader onClick={this.onHeaderButtonClickHandler}/>),
+        collapsibleBackgroundStyle: {
+            height: 60,
+            backgroundColor: 'white',
+            // disableFadeoutInnerComponent: true,
+        }
+    }
+
     /**
      * on Header (color) button click handler
      * filter images based on the clicked color
@@ -56,8 +65,8 @@ class ImageGallery extends Component {
 const collapsibleParams = {
     collapsibleComponent: AlbumHeader,
     collapsibleBackgroundStyle: {
-        height: 60,
-        backgroundColor: 'white',
+        height: 145,
+        backgroundColor: 'rgba(53, 53, 53, 0.8)',
         // disableFadeoutInnerComponent: true,
     }
 }
