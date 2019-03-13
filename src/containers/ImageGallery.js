@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ScrollView, View, Animated } from 'react-native';
 import { withCollapsible } from 'react-navigation-collapsible';
+import { connect } from 'react-redux';
 
 import images from '../data/images';
 import Album from '../components/Album';
@@ -13,12 +14,9 @@ class ImageGallery extends Component {
         filteredImages: images
     };
 
-    collapsibleParams = {
-        collapsibleComponent: () => (<AlbumHeader onClick={this.onHeaderButtonClickHandler}/>),
-        collapsibleBackgroundStyle: {
-            height: 60,
-            backgroundColor: 'white',
-            // disableFadeoutInnerComponent: true,
+    componentWillReceiveProps(nextProps) {
+        if (this.props.firstColorFilter != nextProps.firstColorFilter) {
+            this.filterImagesByColor(nextProps.firstColorFilter);
         }
     }
 
@@ -26,7 +24,7 @@ class ImageGallery extends Component {
      * on Header (color) button click handler
      * filter images based on the clicked color
      */
-    onHeaderButtonClickHandler = (color) => {
+    filterImagesByColor = (color) => {
         const newFilteredImages = typeof color === 'string'
             ? images.filter((image) => image.dominantColors.includes(color))
             : images;
@@ -71,4 +69,11 @@ const collapsibleParams = {
     }
 }
 
-export default withCollapsible(ImageGallery, collapsibleParams);
+const mapStateToProps = state => ({
+    firstColorFilter: state.colorFilter.firstColorFilter
+});
+
+export default connect(
+    mapStateToProps,
+    null
+)(withCollapsible(ImageGallery, collapsibleParams));

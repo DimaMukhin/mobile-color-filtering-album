@@ -1,18 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { connect } from 'react-redux';
 
 import { colors } from '../data/images';
+import { setFirstColorFilter } from '../actions/colorFilterActions';
 
-export default (props) => (
-    <View style={styles.container}>
-        <TouchableOpacity style={styles.roundButton} onPress={() => alert('test')}>
-            <Image source={{ uri: 'https://www.shareicon.net/download/2015/10/18/658157_round_512x512.png' }} style={styles.imageInBox} />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.roundButton} onPress={() => alert('test')}>
-            <Image source={{ uri: 'https://www.shareicon.net/download/2015/10/18/658157_round_512x512.png' }} style={styles.imageInBox} />
-        </TouchableOpacity>
-    </View>
-);
+class AlbumHeader extends Component {
+    render() {
+        return (
+            <View style={styles.container}>
+                <TouchableOpacity style={styles.roundButton} onPress={() => this.props.setFirstColorFilter(colors.red)}>
+                    <Image source={{ uri: 'https://www.shareicon.net/download/2015/10/18/658157_round_512x512.png' }} style={styles.imageInBox} />
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.roundButton} onPress={() => alert('test')}>
+                    <Image source={{ uri: 'https://www.shareicon.net/download/2015/10/18/658157_round_512x512.png' }} style={styles.imageInBox} />
+                </TouchableOpacity>
+            </View>
+        );
+    }
+}
 
 const styles = StyleSheet.create({
     container: {
@@ -34,3 +40,12 @@ const styles = StyleSheet.create({
         borderRadius: 100,
     }
 });
+
+const mapStateToProps = state => ({
+    firstColorFilter: state.colorFilter.firstColorFilter
+});
+
+export default connect(
+    mapStateToProps,
+    { setFirstColorFilter }
+)(AlbumHeader);
