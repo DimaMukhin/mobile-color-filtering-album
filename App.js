@@ -12,12 +12,12 @@ import MainWindow from './src/containers/MainWindow';
 import ImageGallery from './src/containers/ImageGallery';
 
 const AppNavigator = createStackNavigator({
-    // MainWindow: {
-    //     screen: MainWindow,
-    //     navigationOptions: {
-    //         header: null
-    //     }
-    // },
+    MainWindow: {
+        screen: MainWindow,
+        navigationOptions: {
+            header: null
+        }
+    },
     ImageGallery: {
         screen: ImageGallery,
         navigationOptions: {

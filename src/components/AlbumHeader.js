@@ -7,13 +7,29 @@ import { setFirstColorFilter, setSecondColorFilter } from '../actions/colorFilte
 
 class AlbumHeader extends Component {
     render() {
+        const firstButtonBackgroundColor = this.props.firstColorFilter != null ? this.props.firstColorFilter : '#dddddd';
+        const secondButtonBackgroundColor = this.props.secondColorFilter != null ? this.props.secondColorFilter : '#dddddd';
+
         return (
             <View style={styles.container}>
-                <TouchableOpacity style={styles.roundButton} onPress={() => this.props.setFirstColorFilter(colors.red)}>
-                    <Image source={{ uri: 'https://www.shareicon.net/download/2015/10/18/658157_round_512x512.png' }} style={styles.imageInBox} />
+                <TouchableOpacity
+                    style={{ ...styles.firstRoundButton, backgroundColor: firstButtonBackgroundColor }}
+                    onPress={() => this.props.setFirstColorFilter(colors.red)}>
+                    {
+                        this.props.firstColorFilter == null
+                            ? <Image source={{ uri: 'https://www.shareicon.net/download/2015/10/18/658157_round_512x512.png' }} style={styles.imageInBox} />
+                            : null
+                    }
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.roundButton} onPress={() => this.props.setSecondColorFilter(colors.blue)}>
-                    <Image source={{ uri: 'https://www.shareicon.net/download/2015/10/18/658157_round_512x512.png' }} style={styles.imageInBox} />
+
+                <TouchableOpacity
+                    style={{ ...styles.firstRoundButton, backgroundColor: secondButtonBackgroundColor }}
+                    onPress={() => this.props.setSecondColorFilter(colors.blue)}>
+                    {
+                        this.props.secondColorFilter == null
+                            ? <Image source={{ uri: 'https://www.shareicon.net/download/2015/10/18/658157_round_512x512.png' }} style={styles.imageInBox} />
+                            : null
+                    }
                 </TouchableOpacity>
             </View>
         );
@@ -27,7 +43,14 @@ const styles = StyleSheet.create({
         justifyContent: 'space-evenly',
         marginBottom: 10
     },
-    roundButton: {
+    firstRoundButton: {
+        width: 100,
+        height: 100,
+        backgroundColor: '#dddddd',
+        borderRadius: 100,
+        marginTop: 30
+    },
+    secondRoundButton: {
         width: 100,
         height: 100,
         backgroundColor: '#dddddd',
