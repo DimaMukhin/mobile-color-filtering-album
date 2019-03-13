@@ -16,7 +16,11 @@ class ImageGallery extends Component {
 
     componentWillReceiveProps(nextProps) {
         if (this.props.firstColorFilter != nextProps.firstColorFilter) {
-            this.filterImagesByColor(nextProps.firstColorFilter);
+            this.filterImagesByColor(nextProps.firstColorFilter, this.props.secondColorFilter);
+        }
+
+        if (this.props.secondColorFilter != nextProps.secondColorFilter) {
+            this.filterImagesByColor(this.props.firstColorFilter, nextProps.secondColorFilter);
         }
     }
 
@@ -24,10 +28,15 @@ class ImageGallery extends Component {
      * on Header (color) button click handler
      * filter images based on the clicked color
      */
-    filterImagesByColor = (color) => {
-        const newFilteredImages = typeof color === 'string'
-            ? images.filter((image) => image.dominantColors.includes(color))
+    filterImagesByColor = (color1, color2) => {
+        let newFilteredImages = typeof color1 === 'string'
+            ? images.filter((image) => image.dominantColors.includes(color1))
             : images;
+
+        newFilteredImages = typeof color2 === 'string'
+            ? newFilteredImages.filter((image) => image.dominantColors.includes(color2))
+            : newFilteredImages;
+
         this.setState({
             filteredImages: newFilteredImages
         });
@@ -70,7 +79,8 @@ const collapsibleParams = {
 }
 
 const mapStateToProps = state => ({
-    firstColorFilter: state.colorFilter.firstColorFilter
+    firstColorFilter: state.colorFilter.firstColorFilter,
+    secondColorFilter: state.colorFilter.secondColorFilter
 });
 
 export default connect(

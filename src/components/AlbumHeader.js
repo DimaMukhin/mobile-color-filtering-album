@@ -3,7 +3,7 @@ import { View, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { connect } from 'react-redux';
 
 import { colors } from '../data/images';
-import { setFirstColorFilter } from '../actions/colorFilterActions';
+import { setFirstColorFilter, setSecondColorFilter } from '../actions/colorFilterActions';
 
 class AlbumHeader extends Component {
     render() {
@@ -12,7 +12,7 @@ class AlbumHeader extends Component {
                 <TouchableOpacity style={styles.roundButton} onPress={() => this.props.setFirstColorFilter(colors.red)}>
                     <Image source={{ uri: 'https://www.shareicon.net/download/2015/10/18/658157_round_512x512.png' }} style={styles.imageInBox} />
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.roundButton} onPress={() => alert('test')}>
+                <TouchableOpacity style={styles.roundButton} onPress={() => this.props.setSecondColorFilter(colors.blue)}>
                     <Image source={{ uri: 'https://www.shareicon.net/download/2015/10/18/658157_round_512x512.png' }} style={styles.imageInBox} />
                 </TouchableOpacity>
             </View>
@@ -42,10 +42,11 @@ const styles = StyleSheet.create({
 });
 
 const mapStateToProps = state => ({
-    firstColorFilter: state.colorFilter.firstColorFilter
+    firstColorFilter: state.colorFilter.firstColorFilter,
+    secondColorFilter: state.colorFilter.secondColorFilter
 });
 
 export default connect(
     mapStateToProps,
-    { setFirstColorFilter }
+    { setFirstColorFilter, setSecondColorFilter }
 )(AlbumHeader);
