@@ -3,6 +3,7 @@ import { ScrollView, View, Animated } from 'react-native';
 import { withCollapsible } from 'react-navigation-collapsible';
 import { connect } from 'react-redux';
 
+import shuffle from 'shuffle-array'; 
 import images from '../data/images';
 import Album from '../components/Album';
 import AlbumHeader from '../components/AlbumHeader';
@@ -11,7 +12,7 @@ const AnimatedScrollView = Animated.createAnimatedComponent(ScrollView);
 
 class ImageGallery extends Component {
     state = {
-        filteredImages: images
+        filteredImages: shuffle(images)
     };
 
     componentWillReceiveProps(nextProps) {

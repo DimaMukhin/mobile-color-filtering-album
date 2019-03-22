@@ -15,7 +15,8 @@
     "react-navigation": "^3.3.0",
     "react-navigation-collapsible": "^3.0.3",
     "react-redux": "^6.0.1",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "shuffle-array": "^1.0.1"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"
