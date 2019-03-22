@@ -3,7 +3,7 @@ import { View, Image, StyleSheet } from 'react-native';
 
 export default (props) => (
     <View style={styles.container} >
-        <Image source={{ uri: props.url }} style={styles.imageInBox} />
+        <Image source={{uri: props.url}} style={styles.imageInBox} />
     </View>
 );
 
