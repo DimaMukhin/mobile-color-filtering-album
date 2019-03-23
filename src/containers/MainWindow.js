@@ -4,7 +4,7 @@ import Results from '../components/Results';
 import images from '../data/images';
 
 export default class MainWindow extends Component {
-    MAX_TRIALS = 2;
+    MAX_TRIALS = 10;
 
     constructor(props) {
         super(props);

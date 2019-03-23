@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 import AlbumItem from './AlbumItem';
 
@@ -21,14 +21,14 @@ export default class Album extends Component {
         });
     }
 
+    onAlbumItemPress = (image) => {
+        const endTime = new Date();
+        this.props.onClick(image, endTime.getTime());
+    }
+
     render() {
         const albumItems = this.state.images.map((image, i) => (
-            <TouchableOpacity key={i} onPress={() => {
-                const endTime = new Date();
-                this.props.onClick(image, endTime.getTime());
-            }}>
-                <AlbumItem url={image.url} />
-            </TouchableOpacity>
+            <AlbumItem url={image.url} key={i} onPress={() => this.onAlbumItemPress(image)} />
         ));
 
         return (
@@ -42,10 +42,8 @@ export default class Album extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'space-around',
         flexDirection: 'row',
         flexWrap: 'wrap',
-        backgroundColor: '#fff',
-        padding: 10
+        backgroundColor: '#fff'
     }
 });
