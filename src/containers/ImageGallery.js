@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import { ScrollView, View, Animated } from 'react-native';
 import { withCollapsible } from 'react-navigation-collapsible';
 import { connect } from 'react-redux';
+import { Audio } from 'expo';
 
-import shuffle from 'shuffle-array'; 
+import shuffle from 'shuffle-array';
 import images from '../data/images';
 import Album from '../components/Album';
 import AlbumHeader from '../components/AlbumHeader';
+import { setFirstColorFilter, setSecondColorFilter } from '../actions/colorFilterActions';
 
 const AnimatedScrollView = Animated.createAnimatedComponent(ScrollView);
 
@@ -43,13 +45,37 @@ class ImageGallery extends Component {
         });
     };
 
-    onImageClickHandler = (image, endTime) => {
+    onImageClickHandler = async (imageClicked, endTime) => {
         const startTime = this.props.navigation.getParam('startTime');
         const results = this.props.navigation.getParam('results');
-        const timeTaken = endTime - startTime;
+        const imageToFind = this.props.navigation.getParam('imageToFind');
+        
+        //Reset the filters
+        this.props.setFirstColorFilter(null);
+        this.props.setSecondColorFilter(null);
+        
+        try {
+            if (imageClicked.id === imageToFind.id) {
+                const { sound: soundObject, status } = await Audio.Sound.createAsync(
+                    require('../assets/sounds/boop.mp3'),
+                    { shouldPlay: true }
+                );
 
-        //Send results with the new attempt
-        this.props.navigation.navigate('MainWindow', { results: [...results, timeTaken] });
+                const timeTaken = endTime - startTime;
+                
+                // Send results with the new attempt
+                this.props.navigation.navigate('MainWindow', { results: [...results, timeTaken] });
+            } else {
+                const { sound: soundObject, status } = await Audio.Sound.createAsync(
+                    require('../assets/sounds/error.mp3'),
+                    { shouldPlay: true }
+                );
+
+                this.props.navigation.navigate('MainWindow', { results });
+            }
+        } catch (error) {
+            console.log(error);
+        }
     };
 
     render() {
@@ -86,5 +112,5 @@ const mapStateToProps = state => ({
 
 export default connect(
     mapStateToProps,
-    null
+    { setFirstColorFilter, setSecondColorFilter }
 )(withCollapsible(ImageGallery, collapsibleParams));

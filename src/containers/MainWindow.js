@@ -36,7 +36,7 @@ export default class MainWindow extends Component {
         const image = this.getRandomImage();
         const startTime = new Date().getTime();
 
-        this.props.navigation.navigate('ImageGallery', { startTime, results: this.state.results });
+        this.props.navigation.navigate('ImageGallery', { startTime, results: this.state.results, imageToFind: this.state.image });
         this.setState({ image });
     }
 
