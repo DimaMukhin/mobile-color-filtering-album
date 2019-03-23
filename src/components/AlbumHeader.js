@@ -77,12 +77,12 @@ class AlbumHeader extends Component {
                             <TouchableOpacity onPress={() => this.setFilterColorAndCloseModal(colors.pink, this.state.selectColor)}>
                                 <View style={{...styles.changeColorButton, backgroundColor: colors.pink}}></View>
                             </TouchableOpacity>
-                            <TouchableOpacity onPress={() => this.setFilterColorAndCloseModal(colors.grey, this.state.selectColor)}>
+                            {/* <TouchableOpacity onPress={() => this.setFilterColorAndCloseModal(colors.grey, this.state.selectColor)}>
                                 <View style={{...styles.changeColorButton, backgroundColor: colors.grey}}></View>
                             </TouchableOpacity>
                             <TouchableOpacity onPress={() => this.setFilterColorAndCloseModal(colors.brown, this.state.selectColor)}>
                                 <View style={{...styles.changeColorButton, backgroundColor: colors.brown}}></View>
-                            </TouchableOpacity>
+                            </TouchableOpacity> */}
 
                             <TouchableOpacity onPress={() => this.setFilterColorAndCloseModal(null, this.state.selectColor)}>
                                 <Image source={{ uri: 'https://www.shareicon.net/download/2015/10/18/658157_round_512x512.png' }} style={styles.changeColorButton} />
