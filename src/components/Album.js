@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, FlatList } from 'react-native';
 
 import AlbumItem from './AlbumItem';
 
@@ -27,13 +27,14 @@ export default class Album extends Component {
     }
 
     render() {
-        const albumItems = this.state.images.map((image, i) => (
-            <AlbumItem url={image.url} key={i} onPress={() => this.onAlbumItemPress(image)} />
-        ));
-
         return (
             <View style={styles.container}>
-                {albumItems}
+                <FlatList
+                    data={this.props.images}
+                    renderItem={({ item }) => <AlbumItem url={item.url} onPress={() => this.onAlbumItemPress(item)} />}
+                    keyExtractor={(item) => '' + item.id}
+                    numColumns={2}>
+                </FlatList>
             </View>
         );
     }
