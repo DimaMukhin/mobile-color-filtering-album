@@ -69,11 +69,10 @@ export default class MainWindow extends Component {
 
     onRestartButtonClickHandler() {
         this.props.navigation.navigate('MainWindow', { results: [] });
-        // this.setState({ colorLevel: 0, imageLevel: 0 });
     }
 
     getPossibleImages() {
-        const imgIndex = this.state.image.id - 1;
+        const imgIndex = images.findIndex(curr => curr.id === this.state.image.id);
         let possibleImages = [...images];
         possibleImages.splice(imgIndex, 1);
 
