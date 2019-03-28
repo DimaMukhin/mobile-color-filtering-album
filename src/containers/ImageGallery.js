@@ -13,11 +13,18 @@ import { setFirstColorFilter, setSecondColorFilter } from '../actions/colorFilte
 const AnimatedScrollView = Animated.createAnimatedComponent(ScrollView);
 
 class ImageGallery extends Component {
-    state = {
-        filteredImages: shuffle(images)
-    };
+    constructor(props) {
+        super(props);
+        const allImages = shuffle(this.props.navigation.getParam('currImages'));
+        this.state = {
+            allImages,
+            filteredImages: allImages
+        };
+    }
+
 
     componentWillReceiveProps(nextProps) {
+        this.setState({ filteredImages: nextProps.navigation.getParam('currImages') });
         if (this.props.firstColorFilter != nextProps.firstColorFilter) {
             this.filterImagesByColor(nextProps.firstColorFilter, this.props.secondColorFilter);
         }
@@ -33,8 +40,8 @@ class ImageGallery extends Component {
      */
     filterImagesByColor = (color1, color2) => {
         let newFilteredImages = typeof color1 === 'string'
-            ? images.filter((image) => image.dominantColors.includes(color1))
-            : images;
+            ? this.state.allImages.filter((image) => image.dominantColors.includes(color1))
+            : this.state.allImages;
 
         newFilteredImages = typeof color2 === 'string'
             ? newFilteredImages.filter((image) => image.dominantColors.includes(color2))
@@ -49,11 +56,11 @@ class ImageGallery extends Component {
         const startTime = this.props.navigation.getParam('startTime');
         const results = this.props.navigation.getParam('results');
         const imageToFind = this.props.navigation.getParam('imageToFind');
-        
+
         //Reset the filters
         this.props.setFirstColorFilter(null);
         this.props.setSecondColorFilter(null);
-        
+
         try {
             if (imageClicked.id === imageToFind.id) {
                 const { sound: soundObject, status } = await Audio.Sound.createAsync(
@@ -62,7 +69,7 @@ class ImageGallery extends Component {
                 );
 
                 const timeTaken = endTime - startTime;
-                
+
                 // Send results with the new attempt
                 this.props.navigation.navigate('MainWindow', { results: [...results, timeTaken] });
             } else {

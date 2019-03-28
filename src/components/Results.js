@@ -1,14 +1,14 @@
 import React from 'react';
 import { View, Text, StyleSheet, Button, FlatList } from 'react-native';
 
-const getAverage = (ar) => {    
-    const sum = ar.reduce((curr, sum) => sum + curr, 0); 
-    return sum / ar.length;  
+const getAverage = (ar) => {
+    const sum = ar.reduce((curr, sum) => sum + curr, 0);
+    return Math.round(sum / ar.length * 100) / 100;
 }
 
 export default ({ results, onClick }) => {
-    const average = getAverage(results); 
-    
+    const average = getAverage(results);
+
     return (
         <View style={styles.container}>
             <Text style={styles.heading}>Experiment Finished</Text>
@@ -35,13 +35,13 @@ const styles = StyleSheet.create({
     restartButton: {
         width: '80%',
         height: 50
-        },
+    },
     heading: {
         fontWeight: 'bold',
         fontSize: 30
     },
     mediumFont: {
-        fontWeight: 'bold', 
+        fontWeight: 'bold',
         fontSize: 20
     },
     item: {
