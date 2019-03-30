@@ -5,21 +5,19 @@ import images from '../data/images';
 import shuffle from 'shuffle-array';
 
 export default class MainWindow extends Component {
-    MAX_TRIALS = 2;
+    MAX_TRIALS = 5;
     COLOR_LEVELS = ['Scrolling', '1 Color filter', '2 Color filters'];
-    IMG_LEVELS = [10, 20, 40];
+    IMG_LEVELS = [100, 200, 400];
 
     constructor(props) {
         super(props);
         this.state = {
             trial: 0,
             image: this.getRandomImage(),
+            allResults: {},
             results: [],
             colorLevel: 0,
-            maxTrials: this.MAX_TRIALS,
-            totalColorLevels: this.COLOR_LEVELS.length,
-            imageLevel: 0,
-            totalImageLevels: this.IMG_LEVELS.length
+            imageLevel: 0
         };
 
         this.onStartButtonClickHandler = this.onStartButtonClickHandler.bind(this);
@@ -30,31 +28,30 @@ export default class MainWindow extends Component {
         return images[Math.floor(Math.random() * images.length)];
     }
 
-    static getDerivedStateFromProps(nextProps, prevState) {
+    componentWillReceiveProps(nextProps) {
         const newResults = nextProps.navigation.getParam('results');
 
         if (newResults && newResults.length === 0) {
-            return { results: newResults, colorLevel: 0, imageLevel: 0 };
+            return this.setState({ results: newResults, allResults: {}, colorLevel: 0, imageLevel: 0 });
         }
 
-        let newColorLevel = prevState.colorLevel;
-        let newImgLevel = prevState.imageLevel;
+        let newColorLevel = this.state.colorLevel;
+        let newImgLevel = this.state.imageLevel;
 
-        if (newResults && newResults.length > 0 && (newResults.length % prevState.maxTrials === 0)) {
-            newImgLevel = (newImgLevel + 1) % (prevState.totalImageLevels + 1);
+        if (newResults && newResults.length > 0 && (newResults.length % this.MAX_TRIALS === 0)) {
+            newImgLevel = (newImgLevel + 1) % (this.IMG_LEVELS.length + 1);
         }
 
-        if (newResults && newResults.length > 0 && (newResults.length % (prevState.totalImageLevels * prevState.maxTrials) === 0)) {
-            newColorLevel = (newColorLevel + 1) % (prevState.totalColorLevels + 1);
+        if (newResults && newResults.length > 0 && (newResults.length % (this.IMG_LEVELS.length * this.MAX_TRIALS) === 0)) {
+            newColorLevel = (newColorLevel + 1) % (this.COLOR_LEVELS.length + 1);
             newImgLevel = 0;
         }
 
-        if (newResults && (newResults.length !== prevState.results.length)) {
+        if (newResults && (newResults.length !== this.state.results.length)) {
+            const newAllResults = this.getUpdatedResults(newResults);
 
-            return { results: newResults, colorLevel: newColorLevel, imageLevel: newImgLevel };
+            return this.setState({ results: newResults, allResults: newAllResults, colorLevel: newColorLevel, imageLevel: newImgLevel });
         }
-
-        return null;
     }
 
     onStartButtonClickHandler() {
@@ -82,10 +79,30 @@ export default class MainWindow extends Component {
         return possibleImages;
     }
 
+    getUpdatedResults(newResults) {
+        const updatedResults = { ...this.state.allResults };
+        const timeTaken = newResults[newResults.length - 1];
+        const colorLevel = this.COLOR_LEVELS[this.state.colorLevel];
+        const imageLevel = this.IMG_LEVELS[this.state.imageLevel];
+        const resultKey = `${colorLevel},${imageLevel}`;
+
+        if (!updatedResults[colorLevel]) {
+            updatedResults[colorLevel] = {};
+        }
+
+        if (updatedResults[colorLevel][imageLevel]) {
+            updatedResults[colorLevel][imageLevel].push(timeTaken);
+        } else {
+            updatedResults[colorLevel][imageLevel] = [timeTaken];
+        }
+
+        return updatedResults;
+    }
+
     render() {
         //When done will all the trials display the results
         if (this.state.results.length === this.MAX_TRIALS * this.COLOR_LEVELS.length * this.IMG_LEVELS.length) {
-            return <Results results={this.state.results} onClick={this.onRestartButtonClickHandler} />;
+            return <Results results={this.state.results} onClick={this.onRestartButtonClickHandler} allResults={this.state.allResults} />;
         }
 
         return (
@@ -96,9 +113,9 @@ export default class MainWindow extends Component {
                     source={{ uri: this.state.image.url }}
                 />
                 <Text>Image ID: {this.state.image.id}</Text>
-                {this.state.colorLevel === 0 && <Text style={styles.colorLevel}>Using <Text style={{ fontWeight: 'bold', color: 'red' }}>No</Text> color filters</Text>}
-                {this.state.colorLevel === 1 && <Text style={styles.colorLevel}>Using <Text style={{ fontWeight: 'bold', color: 'red' }}>1</Text> color filter</Text>}
-                {this.state.colorLevel === 2 && <Text style={styles.colorLevel}>Using <Text style={{ fontWeight: 'bold', color: 'red' }}>2</Text> color filters</Text>}
+                {this.state.colorLevel === 0 && <Text style={styles.colorLevel}>Using <Text style={styles.numberOfFilter}>No</Text> color filters</Text>}
+                {this.state.colorLevel === 1 && <Text style={styles.colorLevel}>Using <Text style={styles.numberOfFilter}>1</Text> color filter</Text>}
+                {this.state.colorLevel === 2 && <Text style={styles.colorLevel}>Using <Text style={styles.numberOfFilter}>2</Text> color filters</Text>}
 
                 <View style={styles.startButton}>
                     <Button
@@ -122,8 +139,12 @@ const styles = StyleSheet.create({
         fontSize: 50
     },
     colorLevel: {
-        fontSize: 30,
+        fontSize: 40,
         color: 'blue'
+    },
+    numberOfFilter: {
+        fontWeight: 'bold',
+        color: 'red'
     },
     imageDimensions: {
         width: 350,
