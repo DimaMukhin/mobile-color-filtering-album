@@ -1,5 +1,9 @@
 # hci-album-demo
 
+React Native album application with special image filtering based on dominant colors
+
+![demo image](./demo_img.png)
+
 ## Getting started
 
 * install expo-cli globally `npm install -g expo-cli`
