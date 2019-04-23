@@ -1,4 +1,4 @@
-# hci-album-demo
+# mobile-color-filtering-album
 
 React Native album application with special image filtering based on dominant colors
 
