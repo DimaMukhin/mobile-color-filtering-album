@@ -5,9 +5,9 @@ import images from '../data/images';
 import shuffle from 'shuffle-array';
 
 export default class MainWindow extends Component {
-    MAX_TRIALS = 5;
+    MAX_TRIALS = 3;
     COLOR_LEVELS = ['Scrolling', '1 Color filter', '2 Color filters'];
-    IMG_LEVELS = [100, 200, 400];
+    IMG_LEVELS = [200, 400, 600];
 
     constructor(props) {
         super(props);
